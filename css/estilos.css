@@ -174,3 +174,66 @@
     color: var(--tinta-suave);
     font-size: 15px;
 }
+
+/* ---------- 8. Proyecto (banda oscura) ---------- */
+.seccion--oscura {
+    max-width: none;
+    background-color: var(--pasto-hondo);
+}
+
+.proyecto {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 60px;
+    align-items: start;
+    max-width: var(--ancho);
+    margin: 0 auto;
+}
+
+.proyecto__texto {
+    max-width: 560px;
+    color: #C9D3CB;
+}
+
+/* Ficha de datos del proyecto */
+.ficha {
+    border-top: 1px solid var(--pasto);
+}
+
+.ficha__fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--pasto);
+}
+
+.ficha__fila dt {
+    color: #8FA396;
+    font-family: var(--dato);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.ficha__fila dd {
+    color: var(--hueso);
+    font-family: var(--dato);
+    font-size: 13px;
+    text-align: right;
+}
+
+/* ---------- 9. Pie ---------- */
+.pie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: var(--ancho);
+    margin: 0 auto;
+    padding: 30px 24px 44px;
+    border-top: 1px solid var(--borde);
+    color: var(--tinta-suave);
+    font-family: var(--dato);
+    font-size: 12px;
+}
