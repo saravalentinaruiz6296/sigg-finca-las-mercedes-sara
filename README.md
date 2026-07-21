@@ -39,9 +39,6 @@ Sara Valentina Avendaño Ruiz
 
 ## Licencia
 
-Este proyecto está bajo la **Licencia MIT**, una licencia permisiva que permite usar, modificar y distribuir el software libremente, siempre que se conserve el aviso de copyright.
+Este proyecto se distribuye bajo la licencia **MIT**.
 
-Consulta el archivo [LICENSE](LICENSE) para el texto completo.
-
-```
-Copyright (c) 2026 Sara Avendaño
+Copyright (c) 2026 Zulma Salas.
