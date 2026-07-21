@@ -74,3 +74,56 @@
     background-color: var(--tinta);
     color: var(--hueso);
 }
+
+/* ---------- 5. Portada ---------- */
+.portada {
+    position: relative;
+    max-width: var(--ancho);
+    margin: 0 auto;
+    padding: 90px 24px 110px;
+    overflow: hidden;
+}
+
+/* El hierro grande, marcado al fondo */
+.portada__marca {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    width: 420px;
+    height: 420px;
+    transform: translateY(-50%);
+    fill: none;
+    stroke: var(--cuero);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.13;
+    pointer-events: none;
+}
+
+.portada__texto {
+    position: relative;
+    max-width: 680px;
+}
+
+.portada__titulo {
+    margin-bottom: 26px;
+    font-family: var(--display);
+    font-size: clamp(48px, 8vw, 92px);
+    font-weight: 800;
+    line-height: 0.94;
+    letter-spacing: 0.005em;
+}
+
+.portada__entrada {
+    max-width: 560px;
+    margin-bottom: 34px;
+    color: var(--tinta-suave);
+    font-size: 18px;
+}
+
+.portada__acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
