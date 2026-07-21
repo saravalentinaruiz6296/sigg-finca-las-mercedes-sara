@@ -1,15 +1,10 @@
- Zulma Patricia Salas Bautista
- 	
-# SIGG — Sistema integral de gestión ganadera 
-
-Sistema integral para la administración de la finca **Las Mercedes**. Centraliza el control del inventario de la finca, el control sanitario, la reproducción, la producción, los potreros y los costos de la operación
+# SIGG — Sistema Integral de Gestión Ganadera
+Sistema integral para la administración de la finca **Las Mercedes**. Centraliza el control del inventario del hato, el control sanitario, la reproducción, la producción, los potreros y los costos de la operación.
 
 ## Descripción
-
-El SGG busca reemplazar los registros manuales por una herramienta digital que permita consultar el estado de la finca en cualquier momento, reducir errores y apoyar la toma de decisiones con información confiable.
+El SIGG busca reemplazar los registros manuales por una herramienta digital que permita consultar el estado de la finca en cualquier momento, reducir errores y apoyar la toma de decisiones con información confiable.
 
 ## Módulos
-
 - **Inventario del hato** — Registro e identificación de animales, categorías, altas y bajas.
 - **Control sanitario** — Vacunaciones, tratamientos, enfermedades e historial médico.
 - **Reproducción** — Montas, servicios, gestación, partos e indicadores reproductivos.
@@ -18,27 +13,35 @@ El SGG busca reemplazar los registros manuales por una herramienta digital que p
 - **Costos e ingresos** — Registro de gastos, ventas y rentabilidad de la operación.
 
 ## Estado del proyecto
-
 En desarrollo.
 
+## Tecnologías
+- **HTML5** — Estructura y contenido de las páginas.
+- **CSS3** — Estilos y diseño adaptable a distintos dispositivos.
+- **JavaScript** — Lógica e interactividad del lado del cliente.
+
 ## Instalación
-
 ```bash
-
 # Clonar el repositorio
-git clone https://github.com/Ing-ZulmaSalas/sigg-finca-las-mercedes.git
+git clone https://github.com/saravalentinaruiz6296/sigg-finca-las-mercedes-sara.git
 
 # Entrar al directorio
-cd sigg-finca-las-mercedes
+cd sigg-finca-las-mercedes-sara
 ```
-## Tecnologías
+## Ejecución
+Al tratarse de un sitio estático, no requiere instalación de dependencias ni compilación. Basta con abrir el archivo `index.html` en cualquier navegador.
 
-Por definir.
+Para desarrollo se recomienda la extensión **Live Server** de Visual Studio Code, que levanta un servidor local y recarga la página automáticamente al guardar los cambios.
 
 ## Autor
 
-Zulma Salas
+Sara Valentina Avendaño Ruiz
 
 ## Licencia
 
-Por definir.
+Este proyecto está bajo la **Licencia MIT**, una licencia permisiva que permite usar, modificar y distribuir el software libremente, siempre que se conserve el aviso de copyright.
+
+Consulta el archivo [LICENSE](LICENSE) para el texto completo.
+
+```
+Copyright (c) 2026 Sara Avendaño
