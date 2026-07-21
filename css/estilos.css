@@ -109,7 +109,7 @@
 .portada__titulo {
     margin-bottom: 26px;
     font-family: var(--display);
-    font-size: clamp(48px, 8vw, 92px);
+    font-size: clamp(48px, 8vw, 96px);
     font-weight: 800;
     line-height: 0.94;
     letter-spacing: 0.005em;
@@ -125,7 +125,7 @@
 .portada__acciones {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 14px;
 }
 
 /* ---------- 7. Módulos ---------- */
@@ -146,7 +146,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 14px;
     height: 100%;
     padding: 30px 26px 26px;
     text-decoration: none;
