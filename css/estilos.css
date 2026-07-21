@@ -1,3 +1,144 @@
+/* ============================================================
+   SIGG — Finca Las Mercedes
+   Hoja de estilos principal
+   ============================================================ */
+
+/* ---------- 1. Variables (los colores y medidas del sitio) ---------- */
+:root {
+    /* Colores */
+    --pasto-hondo: #1B3024;   /* verde de pradera en sombra: fondos oscuros */
+    --pasto:       #2F5340;   /* verde medio */
+    --ocre:        #D69A2D;   /* pasto seco: color de acento */
+    --cuero:       #8A5A34;   /* cuero: acento secundario */
+    --tinta:       #221C16;   /* texto principal */
+    --tinta-suave: #5C544B;   /* texto secundario */
+    --hueso:       #FAFAF8;   /* fondo de la página */
+    --borde:       #E2DFD7;   /* líneas y bordes */
+    --blanco:      #FFFFFF;
+
+    /* Tipografías */
+    --display: "Big Shoulders Display", "Big Shoulders", "Arial Narrow", sans-serif;
+    --texto:   "Public Sans", system-ui, sans-serif;
+    --dato:    "IBM Plex Mono", monospace;
+
+    /* Medidas */
+    --ancho: 1180px;
+    --radio: 4px;
+}
+
+/* ---------- 2. Base ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--hueso);
+    color: var(--tinta);
+    font-family: var(--texto);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+}
+
+/* Foco visible para quien navega con el teclado */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--ocre);
+    outline-offset: 3px;
+}
+
+/* Enlace de salto: oculto hasta que recibe el foco */
+.saltar {
+    position: absolute;
+    top: -60px;
+    left: 16px;
+    z-index: 100;
+    padding: 10px 18px;
+    background-color: var(--tinta);
+    color: var(--blanco);
+    text-decoration: none;
+    transition: top 0.2s;
+}
+
+.saltar:focus {
+    top: 16px;
+}
+
+/* ---------- 3. Elementos que se repiten ---------- */
+
+/* Etiqueta pequeña sobre los títulos */
+.cintillo {
+    margin-bottom: 14px;
+    color: var(--cuero);
+    font-family: var(--dato);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.cintillo--claro {
+    color: var(--ocre);
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 13px 26px;
+    border: 1.5px solid var(--tinta);
+    border-radius: var(--radio);
+    color: var(--tinta);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.boton:hover {
+    background-color: var(--tinta);
+    color: var(--hueso);
+}
+
+.boton--fuerte {
+    border-color: var(--ocre);
+    background-color: var(--ocre);
+    color: var(--tinta);
+}
+
+.boton--fuerte:hover {
+    background-color: var(--cuero);
+    border-color: var(--cuero);
+    color: var(--blanco);
+}
+
+/* Etiqueta de estado */
+.chip {
+    display: inline-block;
+    padding: 4px 11px;
+    border: 1px solid var(--borde);
+    border-radius: 999px;
+    color: var(--tinta-suave);
+    font-family: var(--dato);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+}
+
+.chip--activo {
+    border-color: var(--ocre);
+    background-color: #FDF4E3;
+    color: var(--cuero);
+}
+
 /* ---------- 4. Cabecera ---------- */
 .cabecera {
     display: flex;
@@ -109,7 +250,7 @@
 .portada__titulo {
     margin-bottom: 26px;
     font-family: var(--display);
-    font-size: clamp(48px, 8vw, 96px);
+    font-size: clamp(48px, 8vw, 92px);
     font-weight: 800;
     line-height: 0.94;
     letter-spacing: 0.005em;
@@ -125,7 +266,35 @@
 .portada__acciones {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 12px;
+}
+
+/* ---------- 6. Secciones ---------- */
+.seccion {
+    max-width: var(--ancho);
+    margin: 0 auto;
+    padding: 76px 24px;
+}
+
+.seccion__encabezado {
+    max-width: 640px;
+    margin-bottom: 46px;
+}
+
+.seccion__titulo {
+    margin-bottom: 16px;
+    font-family: var(--display);
+    font-size: clamp(34px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.02;
+}
+
+.seccion__titulo--claro {
+    color: var(--hueso);
+}
+
+.seccion__entrada {
+    color: var(--tinta-suave);
 }
 
 /* ---------- 7. Módulos ---------- */
@@ -146,7 +315,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    gap: 12px;
     height: 100%;
     padding: 30px 26px 26px;
     text-decoration: none;
@@ -236,4 +405,58 @@
     color: var(--tinta-suave);
     font-family: var(--dato);
     font-size: 12px;
+}
+
+/* ---------- 10. Pantallas pequeñas ---------- */
+@media (max-width: 900px) {
+    .modulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proyecto {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .portada__marca {
+        width: 300px;
+        height: 300px;
+        opacity: 0.08;
+    }
+}
+
+@media (max-width: 620px) {
+    .cabecera {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .portada {
+        padding: 56px 24px 70px;
+    }
+
+    .modulos {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion {
+        padding: 56px 24px;
+    }
+}
+
+/* ---------- 11. Respetar a quien prefiere menos movimiento ---------- */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
+    }
 }
