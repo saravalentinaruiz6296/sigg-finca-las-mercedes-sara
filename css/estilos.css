@@ -127,3 +127,50 @@
     flex-wrap: wrap;
     gap: 12px;
 }
+
+/* ---------- 7. Módulos ---------- */
+.modulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background-color: var(--borde);
+    border: 1px solid var(--borde);
+    list-style: none;
+}
+
+.modulo {
+    background-color: var(--blanco);
+}
+
+.modulo__enlace {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    height: 100%;
+    padding: 30px 26px 26px;
+    text-decoration: none;
+    /* La línea de acento que "se marca" al pasar el cursor */
+    background-image: linear-gradient(var(--ocre), var(--ocre));
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 0 4px;
+    transition: background-size 0.28s ease;
+}
+
+.modulo__enlace:hover {
+    background-size: 100% 4px;
+}
+
+.modulo__nombre {
+    font-family: var(--display);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.modulo__texto {
+    flex-grow: 1;
+    color: var(--tinta-suave);
+    font-size: 15px;
+}
