@@ -11,3 +11,7 @@ enlaces.forEach(function (enlace) {
         alert(`El módulo "${nombre}" todavía está en construcción.`);
     });
 });
+
+function mostrarMensaje(nombre){
+
+}
