@@ -41,4 +41,4 @@ Sara Valentina Avendaño Ruiz
 
 Este proyecto se distribuye bajo la licencia **MIT**.
 
-Copyright (c) 2026 Zulma Salas.
+Copyright (c) 2026 Sara Avendaño.
